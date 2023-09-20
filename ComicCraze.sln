@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComicCraze.Models", "ComicCraze.Models\ComicCraze.Models.csproj", "{59C8743E-1C63-44F9-B7F9-E1F77AB2199F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComicCraze.Web", "ComicCraze.Web\ComicCraze.Web.csproj", "{10CBD990-2950-4D80-B23D-9AB27639B373}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{59C8743E-1C63-44F9-B7F9-E1F77AB2199F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59C8743E-1C63-44F9-B7F9-E1F77AB2199F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59C8743E-1C63-44F9-B7F9-E1F77AB2199F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10CBD990-2950-4D80-B23D-9AB27639B373}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10CBD990-2950-4D80-B23D-9AB27639B373}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10CBD990-2950-4D80-B23D-9AB27639B373}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10CBD990-2950-4D80-B23D-9AB27639B373}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
