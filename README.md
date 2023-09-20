@@ -1,2 +1,2 @@
 # ComicCraze
-A comic app that utilizes the xkcd API.
+Built with ASP.NET MVC.
