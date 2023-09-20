@@ -1,8 +1,17 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model IndexViewModel
+
+@{
+    ViewData["Title"] = "Comic Craze";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<Section class="container text-center mt-5 content-box">
+    <div class="row">
+        <h1 class="col-12 display-1 text-warning">Comic Of The Day:</h1>
+    </div>
+    <div class="row mt-3">
+        <h3 class="col-12 display-5 text-white">Comic Title: @Model.Comic.Title</h3>
+    </div>
+    <div class="row mt-3">
+        <img class="col-12 mx-auto comic-img" src="@Model.Comic.Img" alt="@Model.Comic.Alt"/>
+    </div>
+</Section>

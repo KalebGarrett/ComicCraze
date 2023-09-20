@@ -15,4 +15,20 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-image: url("../img/comic-bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  border: hidden;
+}
+
+.content-box {
+  padding: 2rem;
+  background-color: rgba(26, 30, 33, 50%);
+  border-radius: 25px;
+  margin-bottom: 3rem;
+}
+
+.comic-img{
+  width: 450px; 
+  height: 450px
 }
