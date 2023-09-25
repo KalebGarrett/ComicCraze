@@ -4,8 +4,32 @@
     ViewData["Title"] = "Comic Craze";
 }
 
-<section class="container-fluid bg-warning bg-opacity-25 p-3">
+<section class="container-fluid text-center p-4 bg-dark bg-opacity-75">
     <div class="row">
+        <h1 class="col-12 display-1 text-warning glow-text" style="font-family: 'Boogaloo', sans-serif;">The Daily Comic Craze</h1>
+    </div>
+    <div class="row mt-lg-5">
+        <h3 class="col-12 display-6 text-danger" style="font-family: 'Acme', sans-serif;">@Model.Comic.Title</h3>
+    </div>
+    <div class="row">
+        <h1 class="col-12 display-6 text-white" style="font-family: 'Archivo Narrow', sans-serif;">
+            @DateTime.Now.DayOfWeek,
+            @($"{DateTime.Now:MMMM}") @DateTime.Now.Day, @DateTime.Now.Year
+        </h1>
+    </div>
+</section>
+
+<section class="container text-center p-3">
+    <div class="row">
+        <img class="col-12 mx-auto comic-img bg-danger bg-opacity-75 p-3" src="@Model.Comic.Img" alt="@Model.Comic.Alt"/>
+    </div>
+</section>
+
+<section class="container-fluid bg-dark bg-opacity-75 p-3">
+    <div class="row text-center">
+        <h1 class="col-12 display-1 text-white" style="font-family: 'Acme', sans-serif;">Featured Comics</h1>
+    </div>
+    <div class="row mt-5">
         <div class="col-12">
             <section class="carousel slide text-center" id="background-carousel" data-bs-ride="carousel" style="height: 300px">
                 <ol class="carousel-indicators">
@@ -42,26 +66,5 @@
                 </a>
             </section>
         </div>
-    </div>
-</section>
-
-<section class="container-fluid text-center p-4 bg-dark bg-opacity-75">
-    <div class="row">
-        <h1 class="col-12 display-1 text-danger glow-text" style="font-family: 'Acme', sans-serif;">Daily Comic Craze</h1>
-    </div>
-    <div class="row mt-5">
-        <h3 class="col-12 display-5 text-warning" style="font-family: 'Boogaloo', sans-serif;">@Model.Comic.Title</h3>
-    </div>
-    <div class="row">
-        <h1 class="col-12 display-6 text-white" style="font-family: 'Archivo Narrow', sans-serif;">
-            @DateTime.Now.DayOfWeek,
-            @($"{DateTime.Now:MMMM}") @DateTime.Now.Day, @DateTime.Now.Year
-        </h1>
-    </div>
-</section>
-
-<section class="container text-center p-3">
-    <div class="row">
-        <img class="col-12 mx-auto comic-img bg-danger bg-opacity-75 p-3" src="@Model.Comic.Img" alt="@Model.Comic.Alt"/>
     </div>
 </section>
