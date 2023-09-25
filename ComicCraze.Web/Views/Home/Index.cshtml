@@ -4,14 +4,64 @@
     ViewData["Title"] = "Comic Craze";
 }
 
-<Section class="container text-center mt-5 content-box">
+<section class="container-fluid bg-warning bg-opacity-25 p-3">
     <div class="row">
-        <h1 class="col-12 display-1 text-warning">XKCD Comic</h1>
+        <div class="col-12">
+            <section class="carousel slide text-center" id="background-carousel" data-bs-ride="carousel" style="height: 300px">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#background-carousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#background-carousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#background-carousel" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#background-carousel" data-bs-slide-to="3"></li>
+                    <li data-bs-target="#background-carousel" data-bs-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/revolutionary.png" alt="Revolutionary Comic" class="img-fluid">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/shoes.png" alt="Shoes Comic" class="img-fluid">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/we_get_it.png" alt="We Get It Comic" class="img-fluid">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/thinking_ahead.png" alt="Thinking Ahead Comic" class="img-fluid">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/acceptable_risk.png" alt="Acceptable Risk Comic" class="img-fluid">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#background-carousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#background-carousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </section>
+        </div>
     </div>
-    <div class="row mt-3">
-        <h3 class="col-12 display-6 text-white">Comic Title: @Model.Comic.Title</h3>
+</section>
+
+<section class="container-fluid text-center p-4 bg-dark bg-opacity-75">
+    <div class="row">
+        <h1 class="col-12 display-1 text-danger glow-text" style="font-family: 'Acme', sans-serif;">Daily Comic Craze</h1>
     </div>
-    <div class="row mt-3 border-dark">
-        <img class="col-12 mx-auto comic-img bg-secondary p-3" src="@Model.Comic.Img" alt="@Model.Comic.Alt"/>
+    <div class="row mt-5">
+        <h3 class="col-12 display-5 text-warning" style="font-family: 'Boogaloo', sans-serif;">@Model.Comic.Title</h3>
     </div>
-</Section>
+    <div class="row">
+        <h1 class="col-12 display-6 text-white" style="font-family: 'Archivo Narrow', sans-serif;">
+            @DateTime.Now.DayOfWeek,
+            @($"{DateTime.Now:MMMM}") @DateTime.Now.Day, @DateTime.Now.Year
+        </h1>
+    </div>
+</section>
+
+<section class="container text-center p-3">
+    <div class="row">
+        <img class="col-12 mx-auto comic-img bg-danger bg-opacity-75 p-3" src="@Model.Comic.Img" alt="@Model.Comic.Alt"/>
+    </div>
+</section>
