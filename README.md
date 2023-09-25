@@ -19,6 +19,4 @@ Want the link to utilize the xkcd API?
 
 ## Screenshots
 
-![image](/Images/daily-comic.png)
-
 ![image](/Images/featured-comics.png)
